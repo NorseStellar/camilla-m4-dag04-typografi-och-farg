@@ -129,3 +129,12 @@ h3 {
    font-size: 1.125rem;
    line-height: 1.6;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+   border: 0.125rem solid #8a7a6a;
+}
