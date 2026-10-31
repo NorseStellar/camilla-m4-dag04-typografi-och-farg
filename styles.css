@@ -138,3 +138,15 @@ select,
 textarea {
    border: 0.125rem solid #8a7a6a;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: 0.1875 solid #1a73e8;
+   outline-offset: 0.125;
+}
+
+a:hover {
+   color: #5e0a0a;
+}
