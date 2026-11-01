@@ -36,7 +36,7 @@ nav ul {
    tillgänglighet för alla användare. Textens färg har inte tillräckligt 
    hög kontrast mot bakgrunden. */
 nav a {
-   /* color: #8c1010; */
+   /* color: #8c1010; Contrast Ration enligt webaim.org: 1.05:1=Fail! Byter till vit färg.*/
    color: white;
 }
 /* Valt en ljus färg så kontrastkravet uppfylls. */
@@ -74,6 +74,7 @@ article img,
 
 .knapp {
    display: inline-block;
+   /* Contrast Ratio 9.55:1=Pass. */
    background-color: #8c1010;
    color: #ffffff;
    padding: 0.75rem 1.25rem;
@@ -97,7 +98,7 @@ footer {
    padding: 1rem 1.5rem;
 }
 
-/* Pga dålig kontrast lades vit färg till. */
+/* Pga dålig kontrast (1.03:1) på p-element #222222 mot #2b1c14 lades vit färg till. */
 footer p {
    color: #ffffff;
 }
