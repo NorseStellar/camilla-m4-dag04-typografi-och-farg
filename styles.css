@@ -1,4 +1,5 @@
 /* ===== Dag 3: grunder, boxmodell ===== */
+/* Rem används istället för px på textstorlek för god tillgänglighet och responsivitet. */
 *,
 *::before,
 *::after {
@@ -22,7 +23,7 @@ header {
 header h1 {
    margin: 0 0 0.5rem;
    font-family: Georgia, "Times New Roman", Times, serif;
-   font-size: 1rem;
+   font-size: 1.75rem;
    line-height: 1.2;
 }
 
@@ -121,7 +122,7 @@ footer a:hover {
 p {
    color: #222222;
    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-   font-size: 1rem;
+   font-size: 1.125rem;
    line-height: 1.6;
 }
 
@@ -166,6 +167,12 @@ h3 {
       sans-serif;
    font-size: 1.125rem;
    line-height: 1.6;
+   padding: 1rem;
+   border-radius: 0.5rem;
+}
+
+label {
+   font-weight: bold;
 }
 
 input[type="text"],
@@ -175,12 +182,25 @@ input[type="date"],
 select,
 textarea {
    border: 0.125rem solid #8a7a6a;
+   padding: 0.25rem;
+   border-radius: 0.5rem;
+   font: inherit;
+   display: flex;
+   margin-bottom: 1rem;
 }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-   outline: 0.1875 solid #1a73e8;
-   outline-offset: 0.125;
+   outline: 0.1875rem solid #1a73e8;
+   outline-offset: 0.125rem;
+}
+
+fieldset {
+   margin-bottom: 1rem;
+}
+
+.val {
+   margin-bottom: 1rem;
 }
